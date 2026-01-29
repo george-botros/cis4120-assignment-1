@@ -297,3 +297,68 @@ body {
   background: #5a3b93;
   color: #fff;
 }
+
+
+@media (max-width: 980px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    padding: 20px;
+  }
+
+  .results {
+    padding: 18px 20px 24px;
+  }
+}
+
+@media (max-width: 720px) {
+  .page {
+    margin: 16px auto 32px;
+    padding: 0 14px;
+  }
+
+  .topbar {
+    padding: 8px 10px;
+    border-radius: 14px;
+  }
+
+  .search-input {
+    font-size: 15px;
+  }
+
+  .filters h2,
+  .results h2 {
+    font-size: 28px;
+  }
+
+  .result-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .result-actions {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .action-buttons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .filter-label {
+    font-size: 13px;
+  }
+}
+
