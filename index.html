@@ -1,0 +1,331 @@
+<!-- Used AI  for some of the overall design, help w/ icons, filling in data onto repeating cards, among other things. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Course Search</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <button class="icon-btn" type="button" aria-label="Menu">
+          <span class="icon-text" aria-hidden="true">☰</span>
+        </button>
+        <input class="search-input" type="text" value="" placeholder="Search Courses" />
+        <button class="icon-btn" type="button" aria-label="Search">
+          <span class="icon-text" aria-hidden="true">🔍</span>
+        </button>
+      </header>
+
+      <main class="main-grid">
+        <aside class="filters">
+          <h2>Filters</h2>
+          <div class="filter-card">
+            <div class="filter-chip">
+              <div class="chip-text">
+                <div class="chip-title">CUs</div>
+                <div class="chip-subtitle">CUs per Class</div>
+              </div>
+              <button class="chip-close" type="button" aria-label="Remove">
+                <span class="icon-text" aria-hidden="true">×</span>
+              </button>
+            </div>
+
+            <button class="filter-button" type="button">Enter Preferred Times</button>
+
+            <div class="filter-list">
+              <div class="filter-row">
+                <div class="filter-label">
+                  <span class="filter-icon">
+                    <span class="icon-text" aria-hidden="true">◯</span>
+                  </span>
+                  <span>Non-CIS Elective</span>
+                </div>
+                <span class="icon-text chevron" aria-hidden="true">›</span>
+              </div>
+              <div class="filter-row">
+                <div class="filter-label">
+                  <span class="filter-icon">
+                    <span class="icon-text" aria-hidden="true">◯</span>
+                  </span>
+                  <span>Restricted Tech Elective</span>
+                </div>
+                <span class="icon-text chevron" aria-hidden="true">›</span>
+              </div>
+              <div class="filter-row">
+                <div class="filter-label">
+                  <span class="filter-icon">
+                    <span class="icon-text" aria-hidden="true">◯</span>
+                  </span>
+                  <span>Unrestricted Tech Elective</span>
+                </div>
+                <span class="icon-text chevron" aria-hidden="true">›</span>
+              </div>
+              <div class="filter-row">
+                <div class="filter-label">
+                  <span class="filter-icon">
+                    <span class="icon-text" aria-hidden="true">◯</span>
+                  </span>
+                  <span>AFRC Research</span>
+                </div>
+                <span class="icon-text chevron" aria-hidden="true">›</span>
+              </div>
+              <div class="filter-row">
+                <div class="filter-label">
+                  <span class="filter-icon">
+                    <span class="icon-text" aria-hidden="true">◯</span>
+                  </span>
+                  <span>AFRC Social Science</span>
+                </div>
+                <span class="icon-text chevron" aria-hidden="true">›</span>
+              </div>
+              <div class="filter-row">
+                <div class="filter-label">
+                  <span class="filter-icon">
+                    <span class="icon-text" aria-hidden="true">◯</span>
+                  </span>
+                  <span>ANTH Archaeology</span>
+                </div>
+                <span class="icon-text chevron" aria-hidden="true">›</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <section class="results">
+          <h2>Results</h2>
+
+          <article class="result-item">
+            <div class="result-main">
+              <div class="result-title">CIS 4120 Human-Computer Interaction</div>
+              <div class="result-meta">
+                <div class="stars" aria-hidden="true">
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                </div>
+                <div class="tags">
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    Calendar
+                  </span>
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    Requirements
+                  </span>
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    CU
+                  </span>
+                </div>
+              </div>
+              <div class="result-time">M/W 12:00-3:00 PM</div>
+            </div>
+            <div class="result-actions">
+              <button class="icon-btn heart" type="button" aria-label="Favorite">
+                <span class="icon-text" aria-hidden="true">♡</span>
+              </button>
+              <div class="action-buttons">
+                <button class="btn btn-ghost" type="button">Compare</button>
+                <button class="btn btn-primary" type="button">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="result-item">
+            <div class="result-main">
+              <div class="result-title">HIST 0024 Capitalism and Democracy</div>
+              <div class="result-meta">
+                <div class="stars" aria-hidden="true">
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                </div>
+                <div class="tags">
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    Calendar
+                  </span>
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    Requirements
+                  </span>
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    CU
+                  </span>
+                </div>
+              </div>
+              <div class="result-time">M/W 12:00-3:00 PM</div>
+            </div>
+            <div class="result-actions">
+              <button class="icon-btn heart" type="button" aria-label="Favorite">
+                <span class="icon-text" aria-hidden="true">♡</span>
+              </button>
+              <div class="action-buttons">
+                <button class="btn btn-ghost" type="button">Compare</button>
+                <button class="btn btn-primary" type="button">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="result-item">
+            <div class="result-main">
+              <div class="result-title">BIOE 6000 Master of Bioethics Capstone Seminar</div>
+              <div class="result-meta">
+                <div class="stars" aria-hidden="true">
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                </div>
+                <div class="tags">
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    Calendar
+                  </span>
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    Requirements
+                  </span>
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    CU
+                  </span>
+                </div>
+              </div>
+              <div class="result-time">M/W 12:00-3:00 PM</div>
+            </div>
+            <div class="result-actions">
+              <button class="icon-btn heart" type="button" aria-label="Favorite">
+                <span class="icon-text" aria-hidden="true">♡</span>
+              </button>
+              <div class="action-buttons">
+                <button class="btn btn-ghost" type="button">Compare</button>
+                <button class="btn btn-primary" type="button">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="result-item">
+            <div class="result-main">
+              <div class="result-title">CIS 5110 Theory of Computation</div>
+              <div class="result-meta">
+                <div class="stars" aria-hidden="true">
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                </div>
+                <div class="tags">
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    Calendar
+                  </span>
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    Requirements
+                  </span>
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    CU
+                  </span>
+                </div>
+              </div>
+              <div class="result-time">M/W 12:00-3:00 PM</div>
+            </div>
+            <div class="result-actions">
+              <button class="icon-btn heart" type="button" aria-label="Favorite">
+                <span class="icon-text" aria-hidden="true">♡</span>
+              </button>
+              <div class="action-buttons">
+                <button class="btn btn-ghost" type="button">Compare</button>
+                <button class="btn btn-primary" type="button">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="result-item">
+            <div class="result-main">
+              <div class="result-title">CIS 1600 Mathematical Foundations of Computer Science</div>
+              <div class="result-meta">
+                <div class="stars" aria-hidden="true">
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                  <span class="icon-text" aria-hidden="true">★</span>
+                </div>
+                <div class="tags">
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    Calendar
+                  </span>
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    Requirements
+                  </span>
+                  <span class="tag">
+                    <span class="check-box">
+                      <span class="icon-text" aria-hidden="true">✓</span>
+                    </span>
+                    CU
+                  </span>
+                </div>
+              </div>
+              <div class="result-time">M/W 12:00-3:00 PM</div>
+            </div>
+            <div class="result-actions">
+              <button class="icon-btn heart" type="button" aria-label="Favorite">
+                <span class="icon-text" aria-hidden="true">♡</span>
+              </button>
+              <div class="action-buttons">
+                <button class="btn btn-ghost" type="button">Compare</button>
+                <button class="btn btn-primary" type="button">Add</button>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
